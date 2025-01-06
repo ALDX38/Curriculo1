@@ -1,0 +1,100 @@
+body {
+  background-color: black;
+  color: red;
+  text-align: center;
+}
+
+#myVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.container__conteudo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.conteudo {
+  width: 500px;
+  height: 500px;
+  background-color: black;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 40px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #666;
+}
+
+.listas {
+  position: relative;
+}
+
+.lista1 {
+  display: none; 
+  list-style: none;
+  padding: 0;
+}
+
+.lista1.active {
+  display: block; 
+}
+
+.imagem {
+  height: 40px;
+  width: 50px;
+  padding-left: 20px ;
+}  
+
+.matrix-char {
+  position: absolute;
+  color: green;
+  font-size: 18px;
+  font-family: monospace;
+  pointer-events: none;
+  animation: fadeMove 2s linear;
+}
+
+@keyframes fadeMove {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(calc(var(--dx) * 50px), calc(var(--dy) * 50px)) scale(0);
+}
+}
+
+.Qualidades{
+  display: none;
+  padding: 10px;
+}
+
+.Qualidades.active {
+  display: block; 
+}
