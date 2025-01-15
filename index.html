@@ -1,74 +1,64 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-    <script  defer src="letras.js"></script>
-    <title>PROfissional</title>
+  <script defer src="botoes.js"></script>
+  <title>PROfissional</title>
 </head>
 <body>
-    <header>
-        <h1>Areas epecificas de conhecimento</h1>
-    </header>
-    <video autoplay loop muted id="myVideo">
-        <source src="imagens/vecteezy_green-matrix-particle-fall-background-loop-animation_3663146.mp4" type="video/mp4">
+  <header>
+    <h1 class="ah">Bem-vindo ao Portfólio</h1>
+    <button id="translate-button" class="translate-button">EN</button>
+  </header>
+  <video autoplay loop muted id="myVideo">
+    <source src="imagens/vecteezy_green-matrix-particle-fall-background-loop-animation_3663146.mp4" type="video/mp4">
         Your browser does not support the video tag.
-    </video>
+  </video>
   <div class="container__conteudo">
     <div class="conteudo">
-                <div class="botoes">
-                    <button class="apertar-botao" data-target="lista-concluido">Concluído</button>
-                    <button class="apertar-botao" data-target="lista-em-progresso">Em Progresso</button>
-                    <button class="apertar-botao" data-target="Qualidade">Qualidades</button>  
-                 </div>
-      
+      <div class="botoes">
+        <button class="apertar-botao" data-target="lista-concluido">Concluído</button>
+        <button class="apertar-botao" data-target="lista-em-progresso">Em Progresso</button>
+        <button class="apertar-botao" data-target="Qualidade">Qualidades</button>    
+        <button class="apertar-botao" data-target="metas">Git</button>
+      </div>
+
       <div class="listas">
         <ul id="lista-concluido" class="lista1">
           <h1>Concluído</h1>
-          <li>
-            <p>HTML <img class="imagem" src="imagens/png-transparent-facebook-thumb-smiley-thumb-signal-emoticon-emoji-animation-online-chat-yellow-thumbnail.png" alt="joinha"></p>
-          </li>
-          <li>
-            <p>CSS <img class="imagem" src="imagens/png-transparent-facebook-thumb-smiley-thumb-signal-emoticon-emoji-animation-online-chat-yellow-thumbnail.png" alt="joinha"></p>
-          </li>
-          <li>
-            <p>JavaScript <img class="imagem" src="imagens/png-transparent-facebook-thumb-smiley-thumb-signal-emoticon-emoji-animation-online-chat-yellow-thumbnail.png" alt="joinha"></p>
-          </li>
+          <li><p>HTML <img class="imagem" src="imagens/png-transparent-facebook-thumb-smiley-thumb-signal-emoticon-emoji-animation-online-chat-yellow-thumbnail.png" alt="joinha"></p></li>
+          <li><p>CSS <img class="imagem" src="imagens/png-transparent-facebook-thumb-smiley-thumb-signal-emoticon-emoji-animation-online-chat-yellow-thumbnail.png" alt="joinha"></p></li>
+          <li><p>JavaScript <img class="imagem" src="imagens/png-transparent-facebook-thumb-smiley-thumb-signal-emoticon-emoji-animation-online-chat-yellow-thumbnail.png" alt="joinha"></p></li>
         </ul>
 
         <ul id="lista-em-progresso" class="lista1">
           <h1>Em Progresso</h1>
-          <li>
-            <p>SQL<img class="imagem" src="imagens/5a866e0a4b9365b5fc782c17542e4fbd.gif" alt="corre"></p>
-          </li>
-          <li>
-            <p>NodeJS <img class="imagem" src="imagens/naruto-run-dodging-shuriken-goofy-funny-face-zzi16b9s7hlq8irr.gif" alt="mt chato"></p>
-          </li>
+         <li><p>CRUD<img class="imagem" src="imagens/5a866e0a4b9365b5fc782c17542e4fbd.gif" alt="corre"></p></li>
+         <li><p>NodeJS <img class="imagem" src="imagens/naruto-run-dodging-shuriken-goofy-funny-face-zzi16b9s7hlq8irr.gif" alt="mt chato"></p></li>   
         </ul>
-        
-        <ul id="Qualidade" class="Qualidades">
-          <h1 class="lista1">Qualidades</h1>
-          <li>
-            <p> Persistencia</p> 
-          </li>
-          <li>
-            <p>Facilidade no uso de IA</p>
-          </li>
-          <li>
-            <p>Determinação</p>
-          </li>
-          <li>
-            <p>Cooperatividade</p>
-          </li>
-          <li
-          ><p>Facilidade na comunicação</p>
-          </li>
+
+        <ul id="Qualidade" class="lista1">
+          <h1 class="Qualidade">Qualidades</h1>
+          <li><p>Persistência</p></li> 
+          <li><p>Facilidade no uso de IA</p></li>
+          <li><p>Determinação</p></li>
+          <li><p>Cooperatividade</p> </li>
+          <li><p>Facilidade na comunicação</p></li>
         </ul>
+
+        <ul id="metas" class="lista1">
+          <h1>Metas e Projetos</h1>
+          <li><a href="https://github.com/ALDX38" data-target="_blank" class="button link">GitHub</a></li>
+          <li><a href="https://girassol2.vercel.app/index.html" data-target="_blank" class="button link ">Lojinha</a></li>
+          <li><p>Meu GitHub não demonstra muita atividade porque eu costumo fazer uploads apenas das versões beta e realizo commits apenas quando os projetos estão prontos ou quase concluídos.</p></li>
+        </ul>
+
       </div>
     </div>
   </div>
-
-  <script src="BOTOES.JS"></script>
+  <script defer src="Tradução.js"></script>
+  <script defer src="BOTOES.JS"></script>
 </body>
 </html>
